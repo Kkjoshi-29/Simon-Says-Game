@@ -1,12 +1,14 @@
 body {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 .btn {
-  height: 120px;
-  width: 120px;
-  border: 6px solid black;
+  height: 150px;
+  width: 150px;
+  border: 6px solid white;
   border-radius: 20%;
-  margin: 30px;
+  margin: 35px;
 }
 
 .btn-container {

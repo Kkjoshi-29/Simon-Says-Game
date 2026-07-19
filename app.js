@@ -43,7 +43,10 @@ function levelUp() {
   let randbtn = document.querySelector(`.${randColor}`);
   gameSeq.push(randColor);
   console.log(gameSeq);
-  btnFlash(randbtn);
+  // btnFlash(randbtn);
+  setTimeout(() => {
+    btnFlash(randbtn);
+  }, 250); // 1000 ms = 1 second
 }
 
 // Checks the sequence of user's input
@@ -61,7 +64,7 @@ function checkSeq(idx) {
                     <br> Press any key to restart.`;
     body.style.backgroundColor = "red";
     setTimeout(() => {
-      body.style.backgroundColor = "white";
+      body.style.backgroundColor = "black";
     }, 150);
     reset();
   }
